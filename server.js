@@ -14,9 +14,9 @@ const db = mysql.createConnection(
       // Your MySQL username,
       user: 'root',
     //   port: 3306,
-      // Your MySQL password
-      password: 'fillinthis',
-      database: 'employeeBusinessDB'
+      // fillout your own password and database info
+      password: '',
+      database: ''
     });
     db.connect(function(err) {
         if (err) throw err
@@ -225,7 +225,7 @@ const addRole = () => {
 
 // addEmployee function
 const addEmployee = () => {
-    ("ADD  EMPLOYEE", function(err, res) {
+    ("ADD EMPLOYEE", function(err, res) {
         if (err) {
             console.log('Something went wrong...');
             console.dir(err);
@@ -273,7 +273,7 @@ const addEmployee = () => {
 
 // updateEmployee function
 const updateEmployee = () => {
-    ("UPDATE  EMPLOYEE", function(err, res) {
+    ("UPDATE EMPLOYEE", function(err, res) {
         if (err) {
             console.log('Something went wrong...');
             console.dir(err);
